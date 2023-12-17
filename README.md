@@ -15,12 +15,12 @@ brew install cirruslabs/cli/tart
 
 2. Download a pre-built Base VM from cirruslabs. Note: To build your own Base VM see [Base VM Customization](#base-vm-customization).
 ```zsh
-tart clone ghcr.io/cirruslabs/macos-ventura-base:latest ventura-base
+tart clone ghcr.io/cirruslabs/macos-sonoma-base:latest sonoma-base
 ```
 
 3. Start the VM and configure `softnet` for network isolation.
 ```zsh
-tart run ventura-base --net-softnet
+tart run sonoma-base --net-softnet
 ```
 
 3. Close the VM then run `prepare.sh`. Enter the password for the VM when prompted.
@@ -40,11 +40,11 @@ tart run ventura-base --net-softnet
 ```
 
 ### Options
--u: URL to open in the VM.
--f: File to run in the VM.
--t: VM duration, default no time limit.
--o: Specify the OS version, default is Ventura.
--h: Display usage information.
+- u: URL to open in the VM.
+- f: File to run in the VM.
+- t: VM duration, default no time limit.
+- o: Specify the OS version, default is Ventura.
+- h: Display usage information.
 
 
 ## Base VM Customization
