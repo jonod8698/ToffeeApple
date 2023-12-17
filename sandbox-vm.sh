@@ -3,7 +3,7 @@
 # Parse command line arguments
 URL=""
 FILE_PATH=""
-os_version="ventura"
+os_version="sonoma"
 
 # u - URL to open in the VM
 # f - File to run in the VM
