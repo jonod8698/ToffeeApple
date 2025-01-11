@@ -56,7 +56,6 @@ done
 
 # SSH into the VM using provided credentials
 echo "Close this VM using command + C"
-ssh -R $IP
 if [ ! -z "$URL" ]; then
 ssh -o StrictHostKeyChecking=no -tt admin@$IP > /dev/null 2>&1 << EOF
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --new-window $URL > /dev/null 2>&1
